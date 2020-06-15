@@ -26,9 +26,13 @@ spec:
         app: debian
     spec:
       containers:
-      - image: debian
+      - image: gcr.io/bexs-develop/debian
         imagePullPolicy: IfNotPresent
         name: debian
+        command:
+            - /bin/sh
+            - -c
+            - "echo $my_env_var && sleep 99d"      
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
