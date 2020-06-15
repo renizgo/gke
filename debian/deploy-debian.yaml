@@ -29,9 +29,11 @@ spec:
       - image: gcr.io/bexs-develop/debian
         env:
         - name: START_COMMAND
-          value: APIS   
+          value: APIS
         imagePullPolicy: IfNotPresent
         name: debian
+        ports:
+        - containerPort: 80    
         command:
             - /bin/sh
             - -c
