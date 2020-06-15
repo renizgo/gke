@@ -27,6 +27,9 @@ spec:
     spec:
       containers:
       - image: gcr.io/bexs-develop/debian
+        env:
+        - name: START_COMMAND
+          value: APIS   
         imagePullPolicy: IfNotPresent
         name: debian
         command:
