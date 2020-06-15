@@ -6,6 +6,7 @@ Pretendo dividir os assuntos em diretórios.
 
 ## Hello app
 https://cloud.google.com/kubernetes-engine/docs/quickstart
+https://github.com/GoogleCloudPlatform/kubernetes-engine-samples/blob/master/hello-app/main.go
 
 Diretório: ```./hello```
 
@@ -21,4 +22,5 @@ kubectl get service hello-server
 
 curl http://external-ip/
 ```
+
 
