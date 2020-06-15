@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: hello-server
+  name: int-hello-server
+  namespace: default
+  annotations:
+    cloud.google.com/load-balancer-type: "Internal"
+spec:
+  ports:
+  - nodePort: 0
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: hello-server
+  sessionAffinity: None
+  type: LoadBalancer
