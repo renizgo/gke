@@ -6,7 +6,7 @@ metadata:
   labels:
     app: debian
   name: debian
-  namespace: temis
+  namespace: cambio
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -37,7 +37,7 @@ spec:
         command:
             - /bin/sh
             - -c
-            - "echo $my_env_var && sleep 99d"      
+            - "echo $my_env_var && sleep 9999d"      
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler

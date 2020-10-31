@@ -23,4 +23,17 @@ kubectl get service hello-server
 curl http://external-ip/
 ```
 
+## Debian com psql
+
+Diretório: ```./debian```
+
+## Nginx example
+
+Diretório: ```./nginx```
+
+https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/
+
+## Exercicio de CI / CD
+
+https://cloud.google.com/docs/ci-cd
 
